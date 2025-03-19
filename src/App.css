@@ -1,38 +1,175 @@
 .App {
-  text-align: left;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AppHeaderLayout {
+  flex-direction: row;
+  background-color: #335936;
+  justify-content: space-between;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #335936;
+  height: 7.5vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: left;
+  justify-content: space-between;
+  color: rgb(228, 228, 228);
+  position:absolute;
+  top: 0vw;
+  right: 0vw;
+  left: 0vw;
+  background-image: linear-gradient(#335936, #467149);
+
+  z-index: 10;
+  box-shadow: 0px -5px 20px rgb(0, 0, 0); 
+   
 }
+.App-logo {
+  height: 20vmin;
+  border-radius: 0%;
+  border-left-style:hidden;
+  border-radius: 0% 0% 0% 50%;
+  box-shadow: 0px -5px 20px rgb(0, 0, 0);
+  position:relative;
+  margin-left:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-self: center;
+  background-color: #335936;
+
+  
+}
+
+.header-text {
+  margin-top: 0%;
+  font-family: monospace;
+  padding: 2vh;
+  font-size: xx-large;
+  }
+
+.LI-logo {
+  max-height: 5vh;
+  border-left-style:hidden;
+  margin-inline-start: auto;
+  padding: 1vh;
+  cursor: pointer;
+  margin-left: auto;
+  transition-duration: .5s;
+}
+.LI-logo:hover {
+  transform: scale(1.1)
+}
+
+.resume-logo {
+  max-height: 5vh;
+  border-left-style:hidden;
+  border-radius: 30%;
+  padding: 1vh;
+  cursor: pointer;
+  margin-left: auto;
+  transition-duration: .5s;
+}
+.resume-logo:hover {
+  transform: scale(1.1)
+}
+
+
+.gitHub-logo {
+  max-height: 5vh;
+  border-left-style:hidden;
+  padding: 1vh;
+  cursor: pointer;
+  margin-left: auto;
+  transition-duration: .5s;
+}
+
+.gitHub-logo:hover {
+  transform: scale(1.1)
+}
+
 
 .App-link {
-  color: #61dafb;
+  color: #61fb78;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-Main{
+  background-image: url("JaceLanderBGPhoto.png");
+background-color: #bbe1c0;
+padding: 5vh;
+padding-top: 20vh;
+container-type:normal;
+display: grid;
+grid-template-columns: 1fr 1fr ;
+justify-content:left;
+background-position: center;
+vertical-align: center;
 }
+
+.bgtint
+{
+  background-color:  #bbe1c0;;
+  background-blend-mode:screen;
+}
+
+.App-Main-Bottom{
+  background-color: #bbe1c0;
+  min-height: 10vh;
+  padding-top: 5vh;
+  container-type:normal;
+  display: flex;
+  justify-content:space-evenly;
+  
+  }
+
+.element-text{
+container-type: column;
+justify-content: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+max-width: 50vh;
+min-height: 40vh;
+text-align: center;
+border-color:#335936;
+font-size: x-large;
+vertical-align: middle;
+padding: 0;
+}
+
+.element-pic{
+  container-type: column;
+  justify-content: right;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 40vh;
+  min-height: 40vh;
+  border-color:#335936;
+  font-size: larger;
+  border-radius: 50%;
+  overflow: hidden;
+  align-content: center;
+  padding: 0;
+  transition-duration: 0.5s;
+  }
+  .element-pic:hover{
+      transform: scale(1.1);
+    }
+
+
+.reach-out-button{
+  background-color: #bbe1c0; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(96, 96, 96);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: .5s;
+  max-height: 6vh;
+/* padding-right: 15vh; */
+  }
+
+  .reach-out-button:hover{
+    transform: scale(1.2);
+    background-color:#335936; 
+    color:#bbe1c0;
+    /* border-radius: 10% 10% 10% 10%; */
+    box-shadow: 0px 5px 20px rgb(0, 0, 0);  
+    }
