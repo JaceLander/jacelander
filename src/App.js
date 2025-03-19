@@ -8,9 +8,10 @@ import jacePic3 from './JacePic3.png';
 import jaceBG from './JaceLanderBGPhoto.png';
 import logoThing from './logo.png';
 import './App.css';
-
+import { useEffect } from 'react';
 
 function App() {
+
 
   return (
   <div className="App">
@@ -40,16 +41,21 @@ function App() {
         
       </div>
       <div className='App-Main-Bottom'>        
-        <button className='reach-out-button' onClick={directReach}>Want to Reach Out Directly?</button>
+        <button className='reach-out-button' id='reachOutButton'>Want to Reach Out Directly?</button>
+        <p id='email'>email:JaceLander</p>
       </div>
     </div>
-    
+
   );
 
-
-
-
 }
+
+
+function showContactInfo(){
+var email = document.getElementById('email');
+email.ariaSetSize(10);
+}
+
 function linkedInClick(){
     window.open("https://www.linkedin.com/in/jace-lander-93a999337/");
 }
@@ -61,10 +67,6 @@ function gitHubButtonClick(){
   window.open("https://github.com/JaceLander");
 }
 
-function directReach(){
-  const button = document.querySelector('.reach-out-button');
-  button.classList.toggle('enlarged'); // Toggles the enlarged class
-}
 
 
 export default App;
