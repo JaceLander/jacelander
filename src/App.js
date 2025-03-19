@@ -6,6 +6,7 @@ import jacePic1 from './JacePic1.png';
 import jacePic2 from './JacePic2.png';
 import jacePic3 from './JacePic3.png';
 import jaceBG from './JaceLanderBGPhoto.png';
+import logoThing from './logo.png';
 import './App.css';
 
 
@@ -15,9 +16,7 @@ function App() {
   <div className="App">
       <div className="App-Header-Layout">
         <div className="App-header">
-          <p className="header-text">
-            Jace Lander
-          </p>
+        <img src={logoThing} className="logo-" alt="logo"/>
 
           <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
           <img src={gitHub} className="gitHub-logo" alt="logo" onClick={gitHubButtonClick} />
@@ -63,7 +62,8 @@ function gitHubButtonClick(){
 }
 
 function directReach(){
-
+  const button = document.querySelector('.reach-out-button');
+  button.classList.toggle('enlarged'); // Toggles the enlarged class
 }
 
 
