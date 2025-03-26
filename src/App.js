@@ -9,8 +9,21 @@ import jaceBG from './JaceLanderBGPhoto.png';
 import logoThing from './logo.png';
 import './App.css';
 import { useEffect } from 'react';
+//  import useIsVisible from './useIsVisible.js';
+import { useRef } from 'react';
 
 function App() {
+  // const targetParagraph = useRef();
+  // const targetParagraphVisible = useIsVisible(targetParagraph);
+
+  // Define static styles which will not change
+  // const style = {
+    
+  //   dynamicBackground: {
+  //   // !!! Here based on the value of targetParagraphVisible which will be true or falce we will assign pink or yellow background
+  //     backgroundColor: targetParagraphVisible ? 'pink' : 'yellow',
+  //   },
+  // };
 
 
   return (
@@ -28,21 +41,29 @@ function App() {
 
         </div>
       </div>
-      <div className="App-Main bgtint">
-          <p className='element-text'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
+       <bigDiv className="App-Main bgtint" > 
+      </bigDiv>
+      <bigDiv className="App-Main bgtint">
+      <p className='element-text'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
           program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p>
           <img src={jacePic1} className="element-pic"/>
-          <img src={jacePic2} className="element-pic"/>
+      </bigDiv>
+      <bigDiv className="App-Main bgtint">
+      <img src={jacePic2} className="element-pic"/>
           <p className='element-text'>Currently my experience in software engineering has led me to learn many programming languages, such as C, C#, R, Java, JavaScript, and have gained experience utilizing
           other tools and frameworks like Git, React, SQL and Balsamiq.  </p>
+      </bigDiv>
+
+
+          <bigDiv className="App-Main bgtint">
           <p className='element-text'> Beyond my software engineering experience, I have had experience in leadership and professional development.
           I am the president of the Baldwin Wallace Rugby club where I have set up group events and manage the official instagram. </p>
           <img src={jacePic3} className="element-pic"/>
+          </bigDiv>
         
-      </div>
+
       <div className='App-Main-Bottom'>        
-        <button className='reach-out-button' id='reachOutButton'>Want to Reach Out Directly?</button>
-        <p id='email'>email:JaceLander</p>
+        <ReachOutButton className='reach-out-button'></ReachOutButton>
       </div>
     </div>
 
@@ -51,9 +72,22 @@ function App() {
 }
 
 
-function showContactInfo(){
+function ShowContactInfo(){
 var email = document.getElementById('email');
 email.ariaSetSize(10);
+}
+
+function ReachOutButton() {
+  return (
+    <button className='reach-out-button'>will work</button>
+  );
+}
+
+function bigDiv() {
+  return (
+    
+    <div> </div>
+  );
 }
 
 function linkedInClick(){

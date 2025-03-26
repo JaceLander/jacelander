@@ -1,6 +1,16 @@
 .App {
+  height: 100vh;  /* Full viewport height */
+  overflow-y: auto;  /* Enables scrolling within the content */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #335936;
+}
+
+*{
 
 }
+
 .AppHeaderLayout {
   flex-direction: row;
   background-color: #335936;
@@ -21,7 +31,7 @@
   /* background-image: linear-gradient(#335936, #467149); */
 
   z-index: 10;
-  box-shadow: 0px -5px 20px rgb(0, 0, 0); 
+  /* box-shadow: 0px -5px 20px rgb(0, 0, 0);  */
    
 }
 .App-logo {
@@ -29,7 +39,7 @@
   border-radius: 0%;
   border-left-style:hidden;
   border-radius: 0% 0% 0% 50%;
-  box-shadow: 0px -5px 20px rgb(0, 0, 0);
+  /*box-shadow: 0px -5px 20px rgb(0, 0, 0);*/
   position:relative;
   margin-left:auto;
   margin-top: auto;
@@ -57,7 +67,8 @@
   transition-duration: .5s;
 }
 .LI-logo:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
+  border-bottom-style: double;
 }
 
 .logo-{
@@ -120,13 +131,15 @@ vertical-align: center;
 .App-Main-Bottom{
   background-color: #bbe1c0;
   min-height: 10vh;
-  padding-top: 5vh;
+  /* padding-top: 5vh; */
   container-type:normal;
   display: flex;
   justify-content:center;
   flex-direction: column;
-  
+  transition: 0.3s;
   }
+
+
 
 .element-text{
 container-type: column;
@@ -173,11 +186,6 @@ padding: 0;
   transition-duration: .5s;
   max-height: 6vh;
   margin: auto;
-/* padding-right: 15vh; */
-  }
-  .enlarged {
-    transform: scale(1.2); /* Increases the size */
-    transition: transform 0.3s; /* Smooth transition */
   }
   
   .reach-out-button:hover{
@@ -185,5 +193,11 @@ padding: 0;
     background-color:#335936; 
     color:#bbe1c0;
     /* border-radius: 10% 10% 10% 10%; */
-    box-shadow: 0px 5px 20px rgb(0, 0, 0);  
+    /* box-shadow: 0px 5px 20px rgb(0, 0, 0);   */
     }
+
+    .reach-out-button:active{
+      transform: scale(1.15);
+      }
+
+      
