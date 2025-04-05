@@ -14,65 +14,45 @@
 .AppHeaderLayout {
   flex-direction: row;
   background-color: #335936;
-  justify-content: space-between;
 }
 
 .App-header {
   background-color: #335936;
   height: 7.5vh;
-  display: flex;
   text-align: left;
-  justify-content: space-between;
-  color: rgb(228, 228, 228);
   position:absolute;
   top: 0vw;
   right: 0vw;
   left: 0vw;
-  /* background-image: linear-gradient(#335936, #467149); */
-
   z-index: 10;
-  /* box-shadow: 0px -5px 20px rgb(0, 0, 0);  */
-   
-}
-.App-logo {
-  height: 20vmin;
-  border-radius: 0%;
-  border-left-style:hidden;
-  border-radius: 0% 0% 0% 50%;
-  /*box-shadow: 0px -5px 20px rgb(0, 0, 0);*/
-  position:relative;
-  margin-left:auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  align-self: center;
-  background-color: #335936;
-
-  
+  display: flex;
+  padding-right: 30%;
 }
 
-.header-text {
-  margin-top: 0%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-left: 5vh;
-  font-size: xx-large;
-  }
+
+
+
 
 .LI-logo {
   max-height: 5vh;
   border-left-style:hidden;
   margin-inline-start: auto;
-  padding: 1vh;
+  padding: 0.25vh;
+  margin-top: 1vh;
   cursor: pointer;
   margin-left: auto;
   transition-duration: .5s;
+  border-color:#bbe1c0;
+
 }
 .LI-logo:hover {
-  transform: scale(1.1);
-  border-bottom-style: double;
+  border-left: 0;
+  border-right: 0;
+  border-style:ridge;
 }
 
 .logo-{
-align-self: center;
+justify-content: center;
 height: 5vh;
 padding: 1vh;
 }
@@ -81,27 +61,38 @@ padding: 1vh;
   max-height: 5vh;
   border-left-style:hidden;
   border-radius: 30%;
-  padding: 1vh;
+  padding: 0.25vh;
+  margin-top: 1vh;
   cursor: pointer;
   margin-left: auto;
-  transition-duration: .5s;
+  transition-duration: .2s;
+  border-radius: 0%;
+  border-color:#bbe1c0;
 }
 .resume-logo:hover {
-  transform: scale(1.1)
+  /* transform: scale(1.1); */
+  border-left: 0;
+  border-right: 0;
+  border-style:ridge;
+
 }
 
 
 .gitHub-logo {
   max-height: 5vh;
   border-left-style:hidden;
-  padding: 1vh;
+  padding: 0.25vh;
+  margin-top: 1vh;
   cursor: pointer;
   margin-left: auto;
   transition-duration: .5s;
+  border-color:#bbe1c0;
 }
 
 .gitHub-logo:hover {
-  transform: scale(1.1)
+  border-left: 0;
+  border-right: 0;
+  border-style:ridge;
 }
 
 
@@ -110,16 +101,16 @@ padding: 1vh;
 }
 
 .App-Main{
-  background-image: url("JaceLanderBGPhoto.png");
+background-image: url("JaceLanderBGPhoto.png");
 background-color: #bbe1c0;
-padding: 5vh;
-padding-top: 20vh;
-container-type:normal;
+padding: 10vh;
 display: grid;
-grid-template-columns: 1fr 1fr ;
-justify-content:left;
+align-items: space;
+grid-template-columns: 2fr 1fr ;
+justify-content:space-evenly;
 background-position: center;
 vertical-align: center;
+
 }
 
 .bgtint
@@ -131,8 +122,7 @@ vertical-align: center;
 .App-Main-Bottom{
   background-color: #bbe1c0;
   min-height: 10vh;
-  /* padding-top: 5vh; */
-  container-type:normal;
+  container-type:flex;
   display: flex;
   justify-content:center;
   flex-direction: column;
@@ -143,7 +133,6 @@ vertical-align: center;
 
 .element-text{
 container-type: column;
-justify-content: center;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 max-width: 50vh;
 min-height: 40vh;
@@ -168,9 +157,9 @@ padding: 0;
   padding: 0;
   transition-duration: 0.5s;
   }
-  .element-pic:hover{
+  /* .element-pic:hover{
       transform: scale(1.1);
-    }
+    } */
 
 
 .reach-out-button{
