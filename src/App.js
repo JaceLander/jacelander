@@ -8,28 +8,6 @@ import logoThing from './logo.png';
 import './App.css';
 import { useEffect, useRef, useState} from 'react';
 
-const ViewAwareDiv = () => {
-  const divRef = useRef(null);
-
-  useEffect(() => {
-      const observer = new IntersectionObserver(
-          ([entry]) => {
-              if (entry.isIntersecting) {
-                  console.log('Element is in view!');
-              } else {
-                  console.log('Element is out of view!');
-              }
-          },
-          { threshold: 0.01 } // Trigger at 50% visibility
-      );
-
-      if (divRef.current) observer.observe(divRef.current);
-
-      return () => observer.disconnect();
-  }, []);
-
-  // return <div ref={divRef} className="target-div">Watch me!</div>;
-};
 
 
 function App() {
@@ -77,10 +55,10 @@ function App() {
 }
 
 
-function ShowContactInfo(){
-var email = document.getElementById('email');
-email.ariaSetSize(10);
-}
+// function ShowContactInfo(){
+// var email = document.getElementById('email');
+// email.ariaSetSize(10);
+// }
 
 function ReachOutButton() {
   return (
