@@ -27,8 +27,8 @@ function App() {
       </div>
 
       <BigDiv className="App-Main bgtint" >
-      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
-          program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p></div>
+      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
+          program, and working on their software designed for a nonprofit organization, Mission Guatemala. My role in that is as a co-tech lead.  </p></div>
           <img src={jacePic1} className="element-pic toppad" alt=""/>
 
       </BigDiv>

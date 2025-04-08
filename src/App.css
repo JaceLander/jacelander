@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   background-color: #335936;
-  overflow: hidden;
+  overflow: hidden; 
+  overscroll-behavior-y: none;
 }
 
 .pad{
@@ -135,12 +136,13 @@ vertical-align: center;
 
 .App-Main-Bottom{
   background-color: #bbe1c0;
-  min-height: 10vh;
+  min-height: 12.5vh;
   container-type:flex;
   display: flex;
   justify-content:center;
   flex-direction: column;
   transition: 0.3s;
+
   }
 
 
@@ -205,6 +207,7 @@ font-size: xx-large;
   transition-duration: .5s;
   max-height: 6vh;
   margin: auto;
+  padding-bottom: 0;
   }
   
   .reach-out-button:hover{
