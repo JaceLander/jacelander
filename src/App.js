@@ -6,6 +6,7 @@ import jacePic2 from './JacePic2.png';
 import jacePic3 from './JacePic3.png';
 import logoThing from './logo.png';
 import './App.css';
+import { Linking } from 'react-native'
 import { useEffect, useRef, useState} from 'react';
 
 
@@ -26,10 +27,11 @@ function App() {
       </div>
        {/* <div className="App-Main bgtint" > 
       </div> */}
-      <BigDiv className="App-Main bgtint">
-      <p className='element-text'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
+      <BigDiv className="App-Main bgtint toppad" >
+      <p className='element-text toppad'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
           program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p>
-          <img src={jacePic1} className="element-pic" alt=""/>
+          <img src={jacePic1} className="element-pic toppad" alt=""/>
+
       </BigDiv>
       <BigDiv className="App-Main bgtint">
       <img src={jacePic2} className="element-pic" alt=""/>
@@ -46,7 +48,7 @@ function App() {
         
 
       <div className='App-Main-Bottom' >        
-        <ReachOutButton className='reach-out-button'></ReachOutButton>
+        <ReachOutButton className='reach-out-button' onClick={openMailApp}></ReachOutButton>
       </div>
     </div>
 
@@ -54,15 +56,9 @@ function App() {
 
 }
 
-
-// function ShowContactInfo(){
-// var email = document.getElementById('email');
-// email.ariaSetSize(10);
-// }
-
 function ReachOutButton() {
   return (
-    <button className='reach-out-button'>will work</button>
+    <button className='reach-out-button'>Reach Out</button>
   );
 }
 
@@ -102,13 +98,15 @@ function linkedInClick(){
     window.open("https://www.linkedin.com/in/jace-lander-93a999337/");
 }
 function resumeButtonClick(){
-  window.open("https://drive.google.com/file/d/1LTdneHz5Hk7UkLa38zEG1XCgdJokBvD5/view?usp=sharing");
+  window.open("https://drive.google.com/file/d/1O58p7udLRbKBdEwKO2OWM99zz9XyUYxr/view?usp=drive_link");
 }
 
 function gitHubButtonClick(){
   window.open("https://github.com/JaceLander");
 }
 
-
+const openMailApp = () => {
+  Linking.openURL('mailto:jacethelander@gmail.com')
+};
 
 export default App;
