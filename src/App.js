@@ -3,7 +3,7 @@ import resume from './resume.png';
 import gitHub from './github logo.png';
 import jacePic1 from './JacePic1.png';
 import jacePic2 from './JacePic2.png';
-import jacePic3 from './JacePic3.png';
+import jaceheadshot from './jaceheadshot.png'
 import logoThing from './logo.png';
 import './App.css';
 import { Linking } from 'react-native'
@@ -21,30 +21,31 @@ function App() {
         <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
         <img src={gitHub} className="gitHub-logo" alt="logo" onClick={gitHubButtonClick} />
         <img src={resume} className="resume-logo" alt="logo" onClick={resumeButtonClick} />
-          {/* <img src={logo} className="App-logo" alt="logo"/> */}
 
 
         </div>
       </div>
-       {/* <div className="App-Main bgtint" > 
-      </div> */}
+
       <BigDiv className="App-Main bgtint" >
-      <p className='element-text toppad'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
-          program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p>
+      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
+          program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p></div>
           <img src={jacePic1} className="element-pic toppad" alt=""/>
 
       </BigDiv>
       <BigDiv className="App-Main bgtint">
-      <img src={jacePic2} className="element-pic" alt=""/>
-          <p className='element-text'>Currently my experience in software engineering has led me to learn many programming languages, such as C, C#, R, Java, JavaScript, and have gained experience utilizing
+      <img src={jaceheadshot} className="element-pic" alt=""/>
+         <div className='TextDiv'> <p className='Title'>Experience</p> 
+         <p className='element-text'>Currently my experience in software engineering has led me to learn many programming languages, such as C, C#, R, Java, JavaScript, and have gained experience utilizing
           other tools and frameworks like Git, React, SQL and Balsamiq.  </p>
+          </div> 
       </BigDiv>
 
 
           <BigDiv className="App-Main bgtint">
-          <p className='element-text'> Beyond my software engineering experience, I have had experience in leadership and professional development.
+          <div className='TextDiv'> <p className='Title'>Beyond SE</p><p className='element-text'> Beyond my software engineering experience, I have had experience in leadership and professional development.
           I am the president of the Baldwin Wallace Rugby club where I have set up group events and manage the official instagram. </p>
-          <img src={jacePic3} className="element-pic" alt=""/>
+          </div>
+          <img src={jacePic2} className="element-pic" alt=""/>
           </BigDiv>
         
 
