@@ -7,9 +7,8 @@
   overflow: hidden;
 }
 
-.toppad{
-padding-top: 5vh;
-box-sizing: ;
+.pad{
+  min-height: 7.5vh;
 }
 
 
@@ -24,12 +23,13 @@ box-sizing: ;
   text-align: left;
   position:absolute;
   top: 0vw;
-
+  overflow: scroll;
   right: 0vw;
   left: 0vw;
   z-index: 10;
   display: flex;
   padding-right: 30%;
+  position: fixed;
 }
 
 
@@ -44,14 +44,17 @@ box-sizing: ;
   margin-top: 1vh;
   cursor: pointer;
   margin-left: auto;
-  transition-duration: .5s;
+  transition-duration: .2s;
   border-color:#bbe1c0;
 
 }
 .LI-logo:hover {
+  border-width: .5vh;
+  border-top: 0;
   border-left: 0;
   border-right: 0;
   border-style:ridge;
+  scale: 0.9;
 }
 
 .logo-{
@@ -74,10 +77,12 @@ padding: 1vh;
 }
 .resume-logo:hover {
   /* transform: scale(1.1); */
+  border-width: .5vh;
+  border-top: 0;
   border-left: 0;
   border-right: 0;
   border-style:ridge;
-
+  scale: 0.9;
 }
 
 
@@ -88,14 +93,17 @@ padding: 1vh;
   margin-top: 1vh;
   cursor: pointer;
   margin-left: auto;
-  transition-duration: .5s;
+  transition-duration: .2s;
   border-color:#bbe1c0;
 }
 
 .gitHub-logo:hover {
+  border-width: .5vh;
+  border-top: 0;
   border-left: 0;
   border-right: 0;
   border-style:ridge;
+  scale: 0.9;
 }
 
 
@@ -106,7 +114,9 @@ padding: 1vh;
 .App-Main{
 background-image: url("JaceLanderBGPhoto.png");
 background-color: #bbe1c0;
-padding: 5vh;
+padding: 12.5%;
+padding-top: 5%;
+padding-bottom: 5%;
 display: grid;
 align-items: space;
 grid-template-columns: 2fr 1fr ;

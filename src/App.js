@@ -1,5 +1,5 @@
 import linkedIn from './linkedIn.webp';
-import resume from './resume.jpg';
+import resume from './resume.png';
 import gitHub from './github logo.png';
 import jacePic1 from './JacePic1.png';
 import jacePic2 from './JacePic2.png';
@@ -15,6 +15,7 @@ function App() {
   return (
   <div className="App">
       <div className="App-Header-Layout">
+        <div className = "pad"></div>
         <div className="App-header">
         <img src={logoThing} className="logo-" alt="logo"/>
         <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
@@ -27,7 +28,7 @@ function App() {
       </div>
        {/* <div className="App-Main bgtint" > 
       </div> */}
-      <BigDiv className="App-Main bgtint toppad" >
+      <BigDiv className="App-Main bgtint" >
       <p className='element-text toppad'> Hello! My name is Jace Lander and I am a studying software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
           program and currently working on their software for a nonprofit organization, Mission Guatemala by being a fullstack developer.  </p>
           <img src={jacePic1} className="element-pic toppad" alt=""/>
@@ -87,7 +88,6 @@ function BigDiv({children}) {
       style={{
         transform: isVisible ? 'scale(1.05)' : 'scale(1)', // Scale up when visible
         transition: 'transform 0.5s ease', // Smooth transition for scaling
-        boxShadow: 5,
       }}>
           {children}
       </div>
