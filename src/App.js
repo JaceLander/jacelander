@@ -6,7 +6,7 @@ import jacePic2 from './JacePic2.png';
 import jaceheadshot from './jaceheadshot.png'
 import logoThing from './logo.png';
 import './App.css';
-import { Linking } from 'react-native'
+// import { Linking } from 'react-native'
 import { useEffect, useRef, useState} from 'react';
 
 
