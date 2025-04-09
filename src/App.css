@@ -29,7 +29,7 @@
   left: 0vw;
   z-index: 10;
   display: flex;
-  padding-right: 30%;
+  padding-right: 5%;
   position: fixed;
 }
 
@@ -59,9 +59,10 @@
 }
 
 .logo-{
-justify-content: center;
+
 height: 5vh;
 padding: 1vh;
+
 }
 
 .resume-logo {
@@ -145,7 +146,23 @@ vertical-align: center;
   }
 
 
-
+.projects-button{
+  background-color:#335936; 
+  border-radius: 25%;
+  max-height: 5vh;
+  border-left-style:hidden;
+  margin-inline-start: auto;
+  padding: 0.25vh;
+  margin-top: 1vh;
+  width: 15vh;
+  cursor: pointer;
+  margin-left: auto;
+  transition-duration: .2s;
+  border-width: .25vh;
+  border-left: .25vh;
+  border-color:#bbe1c0;
+  color:#bbe1c0
+}
 .element-text{
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 max-width: 50vh;

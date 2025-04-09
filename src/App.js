@@ -6,6 +6,8 @@ import jacePic2 from './JacePic2.png';
 import jaceheadshot from './jaceheadshot.png'
 import logoThing from './logo.png';
 import './App.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import NewPage from './NewPage';
 import { Linking } from 'react-native'
 import { useEffect, useRef, useState} from 'react';
 
@@ -21,7 +23,7 @@ function App() {
         <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
         <img src={gitHub} className="gitHub-logo" alt="logo" onClick={gitHubButtonClick} />
         <img src={resume} className="resume-logo" alt="logo" onClick={resumeButtonClick} />
-        {/* <ProjectsButton></ProjectsButton> */}
+        <ProjectsButton className='projects-button'>Projects</ProjectsButton>
 
         </div>
       </div>
@@ -65,7 +67,7 @@ function ReachOutButton() {
 
 function ProjectsButton() {
   return (
-    <button>Projects</button>
+    <button className='projects-button'>Projects</button>
   );
 }
 
