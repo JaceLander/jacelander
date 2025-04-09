@@ -27,15 +27,15 @@ function App() {
       </div>
 
       <BigDiv className="App-Main bgtint" >
-      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software engineering
-          program, and working on their software designed for a nonprofit organization, Mission Guatemala. My role in that is as a co-tech lead.  </p></div>
-          <img src={jacePic1} className="element-pic toppad" alt=""/>
+      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software Engineering
+          program, and am currently working on a team as a full stack developer supporting software for the nonprofit organization Mission Guatemala. Specifically, my role is as a co-tech lead.  </p></div>
+          <img src={jaceheadshot} className="element-pic toppad" alt=""/>
 
       </BigDiv>
       <BigDiv className="App-Main bgtint">
-      <img src={jaceheadshot} className="element-pic" alt=""/>
+      <img src={jacePic1} className="element-pic" alt=""/>
          <div className='TextDiv'> <p className='Title'>Experience</p> 
-         <p className='element-text'>Currently my experience in software engineering has led me to learn many programming languages, such as C, C#, R, Java, JavaScript, and have gained experience utilizing
+         <p className='element-text'>My experience in software engineering has led me to learn many programming languages, such as C, C#, R, Java, JavaScript, and have gained experience utilizing
           other tools and frameworks like Git, React, SQL and Balsamiq.  </p>
           </div> 
       </BigDiv>
