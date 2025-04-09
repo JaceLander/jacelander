@@ -57,17 +57,17 @@ function App() {
 
 }
 
-function ReachOutButton() {
-  return (
-    <button className='reach-out-button'>Reach Out</button>
-  );
-}
+// function ReachOutButton() {
+//   return (
+//     <button className='reach-out-button'>Reach Out</button>
+//   );
+// }
 
-function ProjectsButton() {
-  return (
-    <button>Projects</button>
-  );
-}
+// function ProjectsButton() {
+//   return (
+//     <button>Projects</button>
+//   );
+// }
 
 function BigDiv({children}) {
   const divRef = useRef(null);
@@ -111,8 +111,8 @@ function gitHubButtonClick(){
   window.open("https://github.com/JaceLander");
 }
 
-const openMailApp = () => {
-  Linking.openURL('mailto:jacethelander@gmail.com')
-};
+// const openMailApp = () => {
+//   Linking.openURL('mailto:jacethelander@gmail.com')
+// };
 
 export default App;
