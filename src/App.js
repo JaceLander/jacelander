@@ -21,14 +21,13 @@ function App() {
         <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
         <img src={gitHub} className="gitHub-logo" alt="logo" onClick={gitHubButtonClick} />
         <img src={resume} className="resume-logo" alt="logo" onClick={resumeButtonClick} />
-
+        {/* <ProjectsButton></ProjectsButton> */}
 
         </div>
       </div>
 
       <BigDiv className="App-Main bgtint" >
-      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am currently studying at Baldwin Wallace in their Software Engineering
-          program, and am currently working on a team as a full stack developer supporting software for the nonprofit organization Mission Guatemala. Specifically, my role is as a co-tech lead.  </p></div>
+      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am studying at Baldwin Wallace in their Software Engineering program, and am currently working as a co-tech lead on a team supporting software for the nonprofit organization Mission Guatemala.  </p></div>
           <img src={jaceheadshot} className="element-pic toppad" alt=""/>
 
       </BigDiv>
@@ -50,7 +49,7 @@ function App() {
         
 
       <div className='App-Main-Bottom' >        
-        <ReachOutButton className='reach-out-button' onClick={openMailApp}></ReachOutButton>
+        {/* <ReachOutButton className='reach-out-button' onClick={openMailApp}></ReachOutButton> */}
       </div>
     </div>
 
@@ -61,6 +60,12 @@ function App() {
 function ReachOutButton() {
   return (
     <button className='reach-out-button'>Reach Out</button>
+  );
+}
+
+function ProjectsButton() {
+  return (
+    <button>Projects</button>
   );
 }
 
