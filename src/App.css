@@ -1,4 +1,5 @@
 .App {
+
   overflow-y: auto;
   box-sizing: border-box;
   margin: 0;
@@ -9,6 +10,7 @@
 }
 
 .pad{
+
   min-height: 7.5vh;
   background-color:#ecffee
 }
@@ -112,19 +114,26 @@ padding: 1vh;
   color: #61fb78;
 }
 
+.row{
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+}
+
 .App-Main{
 background-image: url("JaceLanderBGPhoto.png");
 background-color: #bbe1c0;
-padding: 12.5%;
-padding-top: 5%;
-padding-bottom: 5%;
+padding:5vw;
+min-height: 30vh;
+max-height: 1000vh;
+padding-left: 13vw;
+align-items: center;
 display: grid;
-align-items: space;
-grid-template-columns: 2fr 1fr ;
-justify-content:space-evenly;
+justify-content:space-between;
+grid-template-columns: 1fr 1fr ;
 background-position: center;
 vertical-align: center;
-
 }
 
 .bgtint
@@ -135,12 +144,13 @@ vertical-align: center;
 
 .App-Main-Bottom{
   background-color: #bbe1c0;
-  min-height: 7.5vh;
   container-type:flex;
   display: flex;
   justify-content:center;
   flex-direction: column;
   transition: 0.3s;
+  min-height: 4vw;
+
 
   }
 
@@ -150,9 +160,10 @@ vertical-align: center;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 width: 60%;
 height: 20%;
+margin-top: 0;
 text-align: center;
 border-color:#335936;
-font-size: 1.5vw;
+font-size: 1.9vw;
 }
 
 .TextDiv{
@@ -178,10 +189,9 @@ font-size: 2vw;
 .element-pic{
   container-type: column;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 25vw;
+  width: 30vw;
   justify-content: center;
   border-color:#335936;
-  font-size: larger;
   border-radius: 50%;
   vertical-align: center;
   align-content: center;

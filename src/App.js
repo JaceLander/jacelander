@@ -13,6 +13,7 @@ import { useEffect, useRef, useState} from 'react';
 
 function App() {
   return (
+    
   <div className="App">
       <div className="App-Header-Layout">
         <div className = "pad"></div>
@@ -25,11 +26,9 @@ function App() {
 
         </div>
       </div>
-
       <BigDiv className="App-Main bgtint" >
       <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am studying at Baldwin Wallace in their Software Engineering program, and am currently working as a co-tech lead on a team supporting software for the nonprofit organization Mission Guatemala.  </p></div>
           <img src={jaceheadshot} className="element-pic toppad" alt=""/>
-
       </BigDiv>
       <BigDiv className="App-Main bgtint">
       <img src={jacePic1} className="element-pic" alt=""/>
