@@ -152,7 +152,7 @@ width: 60%;
 height: 20%;
 text-align: center;
 border-color:#335936;
-font-size: x-large;
+font-size: 1.5vw;
 }
 
 .TextDiv{
@@ -162,29 +162,28 @@ font-size: x-large;
 .Title{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border-bottom: #335936;
-  border-width: .5vh;
+  border-width: .5vw;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  padding-bottom: 2.5vh;
+  padding-bottom: .5vw;
   align-self: center;
   border-style:ridge;
   width: 60%;
   border-style: ridge;
 text-align: center;
-font-size: xx-large;
+font-size: 2vw;
 }
 
 .element-pic{
   container-type: column;
-  justify-content: right;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  width: 80%;
+  width: 25vw;
   justify-content: center;
   border-color:#335936;
   font-size: larger;
   border-radius: 50%;
-  overflow: hidden;
+  vertical-align: center;
   align-content: center;
   transition-duration: 0.5s;
   }
