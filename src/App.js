@@ -72,6 +72,13 @@ function App() {
 function BigDiv({children}) {
   const divRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  if (window.matchMedia('(pointer:fine)').matches) {
+
+} else {
+
+}
+
   useEffect(() => {
       const observer = new IntersectionObserver(
           ([entry]) => {
@@ -87,6 +94,8 @@ function BigDiv({children}) {
       if (divRef.current) observer.observe(divRef.current);
 
       return () => observer.disconnect();
+
+      
   }, []);
 
   return (
