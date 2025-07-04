@@ -15,42 +15,67 @@
   background-color:#ecffee
 }
 
-
-.AppHeaderLayout {
-  flex-direction: row;
-  background-color: #335936;
-}
-
 .App-header {
   background-color: #335936;
   height: 7.5vh;
-  text-align: left;
-  position:absolute;
   top: 0vw;
   right: 0vw;
   left: 0vw;
   z-index: 10;
   display: flex;
-  padding-right: 30%;
+  flex-direction: row;
   position: fixed;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+.logo-container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: .25vw;
+  margin: auto;
+  gap: .25vw;
+  width: 25vw;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 0 0 2.5vw 2.5vw;
+}
+
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: .25vw;
+  margin: auto;
+  gap: .25vw;
+  width: 25vw;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 0 0 2.5vw 2.5vw;
+}
 
 
 
+.center{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+}
 
 .LI-logo {
   max-height: 5vh;
-  border-left-style:hidden;
-  margin-inline-start: auto;
   padding: 0.25vh;
   margin-top: 1vh;
   cursor: pointer;
-  margin-left: auto;
   transition-duration: .2s;
   border-color:#bbe1c0;
-
 }
+
+
+
+
+
 .LI-logo:hover {
   border-width: .5vh;
   border-top: 0;
@@ -60,10 +85,16 @@
   scale: 0.9;
 }
 
-.logo-{
-justify-content: center;
+.logo{
 height: 5vh;
-padding: 1vh;
+width: 5vh;
+margin: 5px;
+}
+
+
+.logo-skills{
+  height: 3vw;
+  margin: .5vw;
 }
 
 .resume-logo {
@@ -122,18 +153,14 @@ padding: 1vh;
 }
 
 .App-Main{
+display: flex;
 background-image: url("JaceLanderBGPhoto.png");
 background-color: #bbe1c0;
 padding:5vw;
 min-height: 30vh;
-max-height: 1000vh;
-padding-left: 13vw;
-align-items: center;
-display: grid;
-justify-content:space-between;
-grid-template-columns: 1fr 1fr ;
+/* padding-left: 13vw; */
+justify-content:space-evenly;
 background-position: center;
-vertical-align: center;
 }
 
 .bgtint
@@ -158,32 +185,33 @@ vertical-align: center;
 
 .element-text{
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-width: 60%;
-height: 20%;
+width: calc(50px + 30vw);
 margin-top: 0;
 text-align: center;
 border-color:#335936;
-font-size: 1.9vw;
+font-size: calc(10px + .75vw);
 }
 
+
+
 .TextDiv{
+  display: flex;
   flex-direction: column;
 }
 
 .Title{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-bottom: #335936;
-  border-width: .5vw;
+  border-bottom: #335936; 
   border-top: 0;
   border-left: 0;
   border-right: 0;
   padding-bottom: .5vw;
   align-self: center;
   border-style:ridge;
-  width: 60%;
+  width: calc(50px + 30vw);
   border-style: ridge;
-text-align: center;
-font-size: 2vw;
+  text-align: center;
+  font-size: calc(20px + .5vw);
 }
 
 .element-pic{
@@ -196,6 +224,12 @@ font-size: 2vw;
   vertical-align: center;
   align-content: center;
   transition-duration: 0.5s;
+  }
+
+  .headshot{
+    width: 10vw;
+    border-radius: 99px;
+    align-self: center;
   }
 
 

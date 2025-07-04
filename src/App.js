@@ -1,10 +1,21 @@
 import linkedIn from './linkedIn.webp';
 import resume from './resume.png';
 import gitHub from './github logo.png';
+import cLogo from './C Logo.png';
+import cSharpLogo from './Csharp_Logo.png';
+import cssLogo from './css logo.png';
+import gitLogo from './git logo.png';
+import githubLogo from './github logo.png';
+import javaLogo from './java logo.png';
+import javaScriptLogo from './javascript logo.png';
+import mySQLLogo from './mysql logo.webp';
+import reactLogo from './react logo.png';
+import springbootLogo from './springboot logo.png';
 import jacePic1 from './JacePic1.png';
 import jacePic2 from './JacePic2.png';
-import jaceheadshot from './jaceheadshot.png'
+import jaceHeadshot from './jaceheadshot.png'
 import logoThing from './logo.png';
+import mgLogo from './mglogo.png';
 import './App.css';
 // import { Linking } from 'react-native'
 import { useEffect, useRef, useState} from 'react';
@@ -15,20 +26,53 @@ function App() {
   return (
     
   <div className="App">
-      <div className="App-Header-Layout">
         <div className = "pad"></div>
         <div className="App-header">
-        <img src={logoThing} className="logo-" alt="logo"/>
+        {/* <img src={logoThing} className="logo-" alt="logo"/> */}
         <img src={linkedIn} className="LI-logo" alt="logo" onClick={linkedInClick} />
         <img src={gitHub} className="gitHub-logo" alt="logo" onClick={gitHubButtonClick} />
         <img src={resume} className="resume-logo" alt="logo" onClick={resumeButtonClick} />
         {/* <ProjectsButton></ProjectsButton> */}
-
-        </div>
       </div>
       <BigDiv className="App-Main bgtint" >
-      <div className='TextDiv'> <p className='Title'>Hello!</p><p className='element-text'> My name is Jace Lander and I am a software engineer from Olmsted Falls, OH. I am studying at Baldwin Wallace in their Software Engineering program, and am currently working as a co-tech lead on a team supporting software for the nonprofit organization Mission Guatemala.  </p></div>
-          <img src={jaceheadshot} className="element-pic toppad" alt=""/>
+      <div className='TextDiv'>
+      <img src={jaceHeadshot} className="headshot" alt=""/>
+      <p className='Title'>Jace Lander</p>
+      <p className='element-text'> 
+      Full stack software developer from Olmsted Falls, OH </p>
+      <p className='element-text'>
+      Student at Baldwin Wallance University </p>
+      </div>
+      </BigDiv>
+      <BigDiv>
+      <div>
+      <p className='Title center'>Skills</p>
+      <div className='logo-container'>
+        <div className='row'>
+          <img src={javaLogo} className="logo-skills"/>
+          <img src={javaScriptLogo}  className="logo-skills"/>
+          <img src={cSharpLogo}  className="logo-skills"/>
+        </div>
+        <div className='row'>
+          <img src={mySQLLogo} className="logo-skills"/>
+          <img src={gitLogo}  className="logo-skills"/>
+          <img src={githubLogo}  className="logo-skills"/>
+        </div>
+        <div className='row'>
+          <img src={reactLogo} className="logo-skills"/>
+          <img src={cssLogo}  className="logo-skills"/>
+          <img src={springbootLogo}  className="logo-skills"/>
+      </div>
+     </div>
+      </div>
+      <div>
+      <p className='Title center'>Experience</p>
+      <div className='skills-container'>
+        <div className='row'>
+          <img src={javaLogo} className="logo-skills"/>
+        </div>
+     </div>
+      </div>
       </BigDiv>
       <BigDiv className="App-Main bgtint">
       <img src={jacePic1} className="element-pic" alt=""/>
@@ -112,7 +156,7 @@ function linkedInClick(){
     window.open("https://www.linkedin.com/in/jace-lander-93a999337/");
 }
 function resumeButtonClick(){
-  window.open("https://drive.google.com/file/d/1O58p7udLRbKBdEwKO2OWM99zz9XyUYxr/view?usp=drive_link");
+  window.open("https://drive.google.com/file/d/1h8qfTx_RAjxjMAG_ki2DqwnDISl8YDTE/view?usp=sharing");
 }
 
 function gitHubButtonClick(){
