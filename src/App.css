@@ -38,7 +38,7 @@
   padding-bottom: .25vw;
   margin: auto;
   gap: .25vw;
-  width: 25vw;
+  width: calc(50px + 30vw);
   background-color: rgba(0, 0, 0, .5);
   border-radius: 0 0 2.5vw 2.5vw;
 }
@@ -49,12 +49,24 @@
   padding-bottom: .25vw;
   margin: auto;
   gap: .25vw;
-  width: 25vw;
+  width: calc(50px + 30vw);
   background-color: rgba(0, 0, 0, .5);
   border-radius: 0 0 2.5vw 2.5vw;
 }
 
+.experience-container{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: .25vw;
+  width: calc(50px + 30vw);
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 0 0 2.5vw 2.5vw;
+}
 
+.column{
+  display: flex;
+  flex-direction: column;
+}
 
 .center{
   display: flex;
@@ -91,10 +103,18 @@ width: 5vh;
 margin: 5px;
 }
 
+.mgLogo{
+  height: 7.5vw;
+  width: 7.5vw;
+  border-radius: 50px;
+  margin: 1vh;
+  }
+
 
 .logo-skills{
   height: 3vw;
   margin: .5vw;
+  align-self: center;
 }
 
 .resume-logo {
@@ -191,6 +211,20 @@ text-align: center;
 border-color:#335936;
 font-size: calc(10px + .75vw);
 }
+
+.label-text{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 0;
+  text-align: center;
+  border-color:#335936;
+  font-size: calc(10px + .75vw);
+  }
+
+  .experience-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color:#ffffff;
+    font-size: calc(10px + .75vw);
+    }
 
 
 

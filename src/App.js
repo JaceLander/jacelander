@@ -49,27 +49,59 @@ function App() {
       <p className='Title center'>Skills</p>
       <div className='logo-container'>
         <div className='row'>
+        <div className='column'>
           <img src={javaLogo} className="logo-skills"/>
-          <img src={javaScriptLogo}  className="logo-skills"/>
-          <img src={cSharpLogo}  className="logo-skills"/>
+          <p className='label-text'> Java </p>
+        </div>
+        <div className='column'>
+          <img src={javaScriptLogo} className="logo-skills"/>
+          <p className='label-text'> JavaScript </p>
+        </div>
+        <div className='column'>
+          <img src={cSharpLogo} className="logo-skills"/>
+          <p className='label-text'> C Sharp </p>
+        </div>
         </div>
         <div className='row'>
+        <div className='column'>
           <img src={mySQLLogo} className="logo-skills"/>
-          <img src={gitLogo}  className="logo-skills"/>
-          <img src={githubLogo}  className="logo-skills"/>
+          <p className='label-text'> SQL </p>
+        </div>
+        <div className='column'>
+          <img src={gitLogo} className="logo-skills"/>
+          <p className='label-text'> Git </p>
+        </div>
+        <div className='column'>
+          <img src={githubLogo} className="logo-skills"/>
+          <p className='label-text'> GitHub </p>
+        </div>
         </div>
         <div className='row'>
+        <div className='column'>
           <img src={reactLogo} className="logo-skills"/>
-          <img src={cssLogo}  className="logo-skills"/>
-          <img src={springbootLogo}  className="logo-skills"/>
+          <p className='label-text'> React </p>
+        </div>
+        <div className='column'>
+          <img src={cssLogo} className="logo-skills"/>
+          <p className='label-text'> css </p>
+        </div>
+        <div className='column'>
+          <img src={springbootLogo} className="logo-skills"/>
+          <p className='label-text'> SpringBoot </p>
+        </div>
       </div>
      </div>
       </div>
       <div>
       <p className='Title center'>Experience</p>
-      <div className='skills-container'>
+      <div className='experience-container'>
         <div className='row'>
-          <img src={javaLogo} className="logo-skills"/>
+          <img src={mgLogo} className="mgLogo"/>
+          <div className='column'>
+          <p className="experience-text"> Mission Guatemala Medical Records Database Software</p>
+          <p className="experience-text"> Baldwin Wallace University</p>
+          <p className="experience-text"> Worked on a large, multi-phase,</p>
+        </div>
         </div>
      </div>
       </div>
