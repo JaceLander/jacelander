@@ -47,7 +47,7 @@ function App() {
       <BigDiv>
       <div>
       <p className='Title center'>Skills</p>
-      <div className='logo-container'>
+      <div className='logo-container white'>
         <div className='row'>
         <div className='column'>
           <img src={javaLogo} className="logo-skills"/>
@@ -93,14 +93,17 @@ function App() {
      </div>
       </div>
       <div>
-      <p className='Title center'>Experience</p>
+      <p className='Title center experience'>Experience</p>
       <div className='experience-container'>
         <div className='row'>
-          <img src={mgLogo} className="mgLogo"/>
-          <div className='column'>
-          <p className="experience-text"> Mission Guatemala Medical Records Database Software</p>
-          <p className="experience-text"> Baldwin Wallace University</p>
-          <p className="experience-text"> Worked on a large, multi-phase,</p>
+            <img src={mgLogo} className="mgLogo"/>
+          <div className='column-exp'>
+            <p className="experience-text white"> Mission Guatemala Medical Records Database Software</p>
+            <p className="experience-text subtext white"> Baldwin Wallace University</p>
+            <p className="experience-text subtext white"> 2024-current</p>
+            <p className="experience-text subtext exp-subtext white"> Worked on a multi-phase, multi-year project developing 
+            a fullstack database software for a rural clinic in Guatemala using various industry standard technologies
+            such as C# and SQL as part of a larger team.</p>
         </div>
         </div>
      </div>

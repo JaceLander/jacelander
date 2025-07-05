@@ -30,7 +30,7 @@
 .row{
   display: flex;
   flex-direction: row;
-  gap: 5vw;
+  gap: 1vw;
 }
 .logo-container{
   display: flex;
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: row;
   padding-bottom: .25vw;
-  width: calc(50px + 30vw);
+  width: calc(50px + 35vw);
   background-color: rgba(0, 0, 0, .5);
   border-radius: 0 0 2.5vw 2.5vw;
 }
@@ -66,13 +66,31 @@
 .column{
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+.exp-subtext{
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom:0;
+  padding-top: 10px;
+  border: white;
+}
+
+.column-exp{
+  flex-direction: column;
+  
+}
+
+.white{
+  color: white;
 }
 
 .center{
   display: flex;
   flex-direction: column;
   margin: auto;
-  gap: 10px;
 }
 
 .LI-logo {
@@ -224,6 +242,11 @@ font-size: calc(10px + .75vw);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-color:#ffffff;
     font-size: calc(10px + .75vw);
+  
+    }
+
+  .experience-text.subtext{
+      font-size: calc(5px + .75vw);
     }
 
 
@@ -246,6 +269,10 @@ font-size: calc(10px + .75vw);
   border-style: ridge;
   text-align: center;
   font-size: calc(20px + .5vw);
+}
+
+.Title.experience{
+  width: calc(50px + 35vw);
 }
 
 .element-pic{
