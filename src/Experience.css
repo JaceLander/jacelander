@@ -36,7 +36,7 @@
   }
 
   .experience-text.subtext{
-  font-size: calc(6.5px + .35vw);
+  font-size: calc(6.5px + .5vw);
   padding: .75vw;
   padding-left: 0;
   }
