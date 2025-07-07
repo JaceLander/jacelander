@@ -11,9 +11,8 @@
     display: flex;
     width: calc(80px + 40vw);
     align-self: center;
-    gap: 1vw;
     border-radius: 10px;
-    height: 3vw;
+    height: 30px;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, .5);
   }
@@ -29,8 +28,8 @@
   }
 
 .project-button{
-    width:10vw;
-    height: 3vw;
+    min-width:10vw;
+    height: 30px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -46,7 +45,9 @@
     background-color:rgb(156, 156, 156);
 }
 
-
+.desc-text{
+  font-size: calc(10px + .5vw);
+}
 
 .project-preview{
     height:0px;

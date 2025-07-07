@@ -167,7 +167,7 @@ function proj4Button(){
                 {/* <img src={nfliphonescreenshot} className='project-image'></img> */}
                 <img src={nflscreenshot} className='project-image' style={{height: "15vw",
                 width:"30vw", margin:"auto", paddingTop:"1vw"}} alt="Screenshot of NFLdle"></img>
-                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font'>NFLdle is a front end react app utilizing sportsData.io's 
+                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>NFLdle is a front end react app utilizing sportsData.io's 
                     RESTful API and deployed with cloudflare. The application utilizes live-rendered
                     elements in response to user input and fetches data in such a way to minimize API calls 
                     and maximize performance. </div>
@@ -177,7 +177,7 @@ function proj4Button(){
             <div className='column'>
                 <img src={wordWarden} className='project-image' style={{height: "15vw",
                 width:"auto", margin:"auto", paddingTop:"1vw"}} alt="Word Warden screenshot"></img>
-                <div style={{width:"45vw", padding:"1vw", textAlign:"center" , alignSelf:"center"}} className='font'>Word Warden is a fullstack project with the backend &
+                <div style={{width:"45vw", padding:"1vw", textAlign:"center" , alignSelf:"center"}} className='font desc-text'>Word Warden is a fullstack project with the backend &
                 database handled using supabase. It was released with feedback on how to improve
                 it and with many bugs that had to be quickly handled, giving lots of quick experience
                 on deploying a web app. </div>
@@ -191,7 +191,7 @@ function proj4Button(){
                 <img src={BeaconDB} className='project-image' style={{height: "15vw",
                 width:"auto", margin:"auto", paddingTop:"1vw"}} alt="Screenshot of Beacon MySQL Database"></img>
               </div>
-                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font'>Beacon is a work-in-progress
+                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>Beacon is a work-in-progress
                 full-stack application dedicated to reviewing games, building a backlog and sharing with friends. 
                 The database is using MySQL, backend developed with Java and SpringBoot, and frontend in React. This project
                 is hoped to be released sometime early 2026.</div>
@@ -199,7 +199,7 @@ function proj4Button(){
             </div>
             <div className={`project-preview ${proj4Visible ? "toggled" : ""}`}>
             <div className='column'>
-                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font'>Always improving and always changing, this Website
+                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>Always improving and always changing, this Website
                 is an evolving display of my current state in the ever-evolving field of Software development. Come back in a month
                 and I am sure to have improved this site in some way!</div>
               </div>
@@ -224,7 +224,7 @@ function proj4Button(){
       <div className='App-Main-Bottom' >        
         {/* <ReachOutButton className='reach-out-button' onClick={openMailApp}></ReachOutButton> */}
       </div>
-    </div>
+  </div>
 
   );
 
