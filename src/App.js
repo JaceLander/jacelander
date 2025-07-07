@@ -71,7 +71,7 @@ function proj4Button(){
       </div>
       <BigDiv className="App-Main bgtint">
       <div className='TextDiv'>
-      <img src={jaceHeadshot} className="headshot" alt="Picture of Jace Lander"/>
+      <img src={jaceHeadshot} className="headshot" alt="Jace Lander"/>
       <p className='Title'>Jace Lander</p>
       <p className='element-text'> 
       Full stack software developer from Olmsted Falls, OH </p>
