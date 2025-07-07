@@ -1,0 +1,73 @@
+.experience-text{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color:#ffffff;
+    margin:0;
+    padding-right: 1vw;
+}
+
+.experience-container{
+    width: 100%;
+    max-width: 65vw;
+    padding-top:0.5vw;
+  
+    padding-bottom:0.5vw;
+    background-color: rgba(0, 0, 0, .5);
+      /* border-bottom: #335936;
+    border-style: ridge; */
+    align-self: center;
+    border-radius: 0 0 2.5vw 2.5vw;
+  }
+
+
+    .mgLogo{
+        height: 7.5vw;
+        width: 7.5vw;
+        border-radius: 30px;
+        margin: 1vh;
+        }
+      
+
+    .Title.experience{
+        width: 100%;
+      }
+
+  .experience-text.title{
+    font-size: calc(7.5px + .65vw);
+  }
+
+  .experience-text.subtext{
+  font-size: calc(6.5px + .35vw);
+  padding: .75vw;
+  padding-left: 0;
+  }
+
+  .timeorggap {
+margin-top: .25vw;
+    border-style: ridge;
+    border-width: .5px;
+    border-color: #ffffff;
+    flex-grow: 1;
+    white-space: nowrap;
+  }
+
+  .experience-text.organization{
+    padding-top:.25vw;
+    font-size: calc(6.5px + .5vw);
+    padding-right:1vw;
+    width: auto;
+  }
+
+  .experience-text.time{
+    padding-top:.25vw;
+    font-size: calc(6.5px + .5vw);
+    padding-left: 1vw;
+    margin-left: auto;
+  }
+
+  .exp-subtext{
+    border-style: solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom:0;
+    border: white;
+  }
