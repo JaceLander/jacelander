@@ -240,7 +240,7 @@ font-size: calc(10px + .75vw);
   }
 
   .headshot{
-    width: 10vw;
+    width: calc(40px + 10vw);
     border-radius: 99px;
     align-self: center;
   }

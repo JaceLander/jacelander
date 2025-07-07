@@ -17,6 +17,7 @@ import nflscreenshot from './nfldlescreenshot.png';
 import wordWarden from './WordWarden.png';
 import BeaconLogin from './BeaconLogin.png';
 import BeaconDB from './BeaconDB.png';
+import supabase from './supabase.png';
 import './App.css';
 import './Experience.css';
 import './Skills.css';
@@ -70,6 +71,7 @@ function proj4Button(){
         <img src={resume} className="resume-logo" alt="logo" onClick={resumeButtonClick} />
       </div>
       <BigDiv className="App-Main bgtint">
+      <div style={{alignSelf: "center", justifySelf:"center"}}>
       <div className='TextDiv'>
       <img src={jaceHeadshot} className="headshot" alt="Jace Lander"/>
       <p className='Title'>Jace Lander</p>
@@ -77,6 +79,9 @@ function proj4Button(){
       Full stack software developer from Olmsted Falls, OH </p>
       <p className='element-text'>
       Student at Baldwin Wallace University </p>
+      <p className='element-text'>
+      Email: jacethelander@gmail.com </p>
+      </div>
       </div>
       </BigDiv>
       <BigDiv>
@@ -125,6 +130,16 @@ function proj4Button(){
           <p className='label-text'> SpringBoot </p>
         </div>
       </div>
+      <div className='row'>
+      <div className='column'>
+          <img src={supabase} className="logo-skills" alt="springboot"/>
+          <p className='label-text'> Supabase </p>
+      </div>
+      {/* <div className='column'>
+          <img src={supabase} className="logo-skills" alt="springboot"/>
+          <p className='label-text'> Supabase </p>
+      </div> */}
+      </div>
      </div>
       </div>
         <div className='big-column'>
@@ -171,6 +186,7 @@ function proj4Button(){
                     RESTful API and deployed with cloudflare. The application utilizes live-rendered
                     elements in response to user input and fetches data in such a way to minimize API calls 
                     and maximize performance. </div>
+                    <button className='visitSite font' onClick={nfldleButtonClick}>Visit</button>
               </div>
             </div>
             <div className={`project-preview ${proj2Visible ? "toggled" : ""}`}>
@@ -181,6 +197,7 @@ function proj4Button(){
                 database handled using supabase. It was released with feedback on how to improve
                 it and with many bugs that had to be quickly handled, giving lots of quick experience
                 on deploying a web app. </div>
+                <button className='visitSite font' onClick={wordWardenButtonClick}>Visit</button>
               </div>
             </div>
             <div className={`project-preview ${proj3Visible ? "toggled" : ""}`}>
@@ -196,11 +213,12 @@ function proj4Button(){
                 The database is using MySQL, backend developed with Java and SpringBoot, and frontend in React. This project
                 is hoped to be released sometime early 2026.</div>
               </div>
+
             </div>
             <div className={`project-preview ${proj4Visible ? "toggled" : ""}`}>
             <div className='column'>
-                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>Always improving and always changing, this Website
-                is an evolving display of my current state in the ever-evolving field of Software development. Come back in a month
+                <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>Always improving and always changing, this website
+                is a display of my current state in the ever-evolving field of software development. Come back in a month
                 and I am sure to have improved this site in some way!</div>
               </div>
             </div>
@@ -212,7 +230,7 @@ function proj4Button(){
 
 
           <BigDiv className="App-Main bgtint" >
-          <div className='TextDiv'> <p className='Title'>A Little More About Me</p><p className='element-text'> Beyond my software engineering experience, I have had experience in leadership and professional development.
+          <div className='TextDiv'> <p className='Title'>A Little More About Me</p><p className='element-text font desc-text' style={{color:"black", fontSize:"calc(5px + 1vw)", paddingTop:"0"}}> Beyond my software engineering experience, I have had experience in leadership and professional development.
           I am the president of the Baldwin Wallace Rugby club where I have set up group events and manage the official instagram. I am currently slated
           to graduate in spring of 2026, and have a 3.75 GPA. I have a genuine excitement for software and what it has the capability to do, so if any of this 
           seems interesting to you please feel free to reach out!</p>
@@ -229,18 +247,6 @@ function proj4Button(){
   );
 
 }
-
-// function ReachOutButton() {
-//   return (
-//     <button className='reach-out-button'>Reach Out</button>
-//   );
-// }
-
-// function ProjectsButton() {
-//   return (
-//     <button>Projects</button>
-//   );
-// }
 
 function BigDiv({children}) {
   const divRef = useRef(null);
@@ -293,8 +299,12 @@ function gitHubButtonClick(){
   window.open("https://github.com/JaceLander");
 }
 
-// const openMailApp = () => {
-//   Linking.openURL('mailto:jacethelander@gmail.com')
-// };
+function wordWardenButtonClick(){
+  window.open("https://word-warden.pages.dev/");
+}
+
+function nfldleButtonClick(){
+  window.open("https://nfldle.pages.dev/");
+}
 
 export default App;

@@ -45,8 +45,19 @@
     background-color:rgb(156, 156, 156);
 }
 
+.visitSite{
+  width: calc(75px + 2vw);
+  align-self: center;
+  margin: 1vw;
+  cursor:pointer;
+  border: none;
+  height: calc(15px + 1vw);
+  border-radius: 1vw;
+  color:black;
+}
+
 .desc-text{
-  font-size: calc(10px + .5vw);
+  font-size: calc(10px + .25vw);
 }
 
 .project-preview{
