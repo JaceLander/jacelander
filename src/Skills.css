@@ -1,0 +1,28 @@
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .25vw;
+    margin: auto;
+    gap: .25vw;
+    width: calc(50px + 30vw);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0 0 2.5vw 2.5vw;
+    margin-bottom: 100%;
+  }
+
+  .logo-skills{
+    height: 3vw;
+    margin: .5vw;
+    align-self: center;
+  }
+
+  .logo-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .25vw;
+    margin: auto;
+    gap: .25vw;
+    width: calc(50px + 30vw);
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 0 0 2.5vw 2.5vw;
+  }

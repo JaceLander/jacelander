@@ -15,42 +15,60 @@
   background-color:#ecffee
 }
 
-
-.AppHeaderLayout {
-  flex-direction: row;
-  background-color: #335936;
-}
-
 .App-header {
   background-color: #335936;
   height: 7.5vh;
-  text-align: left;
-  position:absolute;
   top: 0vw;
   right: 0vw;
   left: 0vw;
   z-index: 10;
   display: flex;
-  padding-right: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20vw;
   position: fixed;
 }
 
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.column{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
+.column-exp{
+  flex-direction: column;
+}
 
+.white{
+  color: white;
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 .LI-logo {
   max-height: 5vh;
-  border-left-style:hidden;
-  margin-inline-start: auto;
   padding: 0.25vh;
   margin-top: 1vh;
   cursor: pointer;
-  margin-left: auto;
   transition-duration: .2s;
   border-color:#bbe1c0;
-
 }
+
+
+
+
+
+
 .LI-logo:hover {
   border-width: .5vh;
   border-top: 0;
@@ -60,11 +78,15 @@
   scale: 0.9;
 }
 
-.logo-{
-justify-content: center;
+.logo{
 height: 5vh;
-padding: 1vh;
+width: 5vh;
+margin: 5px;
 }
+
+
+
+
 
 .resume-logo {
   max-height: 5vh;
@@ -114,26 +136,22 @@ padding: 1vh;
   color: #61fb78;
 }
 
-.row{
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-  align-content: center;
-}
 
-.App-Main{
-background-image: url("JaceLanderBGPhoto.png");
-background-color: #bbe1c0;
-padding:5vw;
-min-height: 30vh;
-max-height: 1000vh;
-padding-left: 13vw;
-align-items: center;
-display: grid;
-justify-content:space-between;
-grid-template-columns: 1fr 1fr ;
-background-position: center;
-vertical-align: center;
+
+.App-Main {
+  display: grid;
+  padding-right:5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5vw; /* add this for space between grid items */
+  align-items: start; /* align top of each grid cell */
+  justify-items: center; /* center contents inside each cell */
+  height: 65vh;
+  background-image: url("JaceLanderBGPhoto.png");
+  background-color: #bbe1c0;
+  background-position: center;
+  background-size: cover; /* optional: makes background fill the container */
 }
 
 .bgtint
@@ -154,36 +172,59 @@ vertical-align: center;
 
   }
 
-
+.font{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: aliceblue;
+}
 
 .element-text{
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-width: 60%;
-height: 20%;
+width: calc(50px + 30vw);
+align-self: center;
 margin-top: 0;
 text-align: center;
 border-color:#335936;
-font-size: 1.9vw;
+font-size: calc(10px + .75vw);
 }
 
+.label-text{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 0;
+  text-align: center;
+  border-color:#335936;
+  font-size: calc(10px + .5vw);
+  }
+
+  
+
 .TextDiv{
+  display: flex;
   flex-direction: column;
 }
 
 .Title{
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  border-bottom: #335936;
-  border-width: .5vw;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   padding-bottom: .5vw;
   align-self: center;
-  border-style:ridge;
-  width: 60%;
+  width: calc(50px + 30vw);
+  border-bottom: #335936;
   border-style: ridge;
-text-align: center;
-font-size: 2vw;
+  text-align: center;
+  font-size: calc(20px + .5vw);
+}
+
+
+
+.big-column{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: auto;
+  max-width: 65vw;
+  margin-bottom: 100%;
 }
 
 .element-pic{
@@ -196,6 +237,12 @@ font-size: 2vw;
   vertical-align: center;
   align-content: center;
   transition-duration: 0.5s;
+  }
+
+  .headshot{
+    width: 10vw;
+    border-radius: 99px;
+    align-self: center;
   }
 
 
@@ -225,5 +272,11 @@ font-size: 2vw;
     .reach-out-button:active{
       transform: scale(1.3);
       }
+
+
+
+
+
+
 
       
