@@ -71,7 +71,7 @@ function proj4Button(){
       </div>
       <BigDiv className="App-Main bgtint">
       <div className='TextDiv'>
-      <img src={jaceHeadshot} className="headshot" alt=""/>
+      <img src={jaceHeadshot} className="headshot" alt="Picture of Jace Lander"/>
       <p className='Title'>Jace Lander</p>
       <p className='element-text'> 
       Full stack software developer from Olmsted Falls, OH </p>
@@ -85,43 +85,43 @@ function proj4Button(){
       <div className='logo-container white'>
         <div className='row'>
         <div className='column'>
-          <img src={javaLogo} className="logo-skills"/>
+          <img src={javaLogo} className="logo-skills" alt="Java"/>
           <p className='label-text'> Java </p>
         </div>
         <div className='column'>
-          <img src={javaScriptLogo} className="logo-skills"/>
+          <img src={javaScriptLogo} className="logo-skills" alt="JavaScript"/>
           <p className='label-text'> JavaScript </p>
         </div>
         <div className='column'>
-          <img src={cSharpLogo} className="logo-skills"/>
+          <img src={cSharpLogo} className="logo-skills"alt="CSharp"/>
           <p className='label-text'> C Sharp </p>
         </div>
         </div>
         <div className='row'>
         <div className='column'>
-          <img src={mySQLLogo} className="logo-skills"/>
+          <img src={mySQLLogo} className="logo-skills" alt="MySQL"/>
           <p className='label-text'> SQL </p>
         </div>
         <div className='column'>
-          <img src={gitLogo} className="logo-skills"/>
+          <img src={gitLogo} className="logo-skills" alt="git"/>
           <p className='label-text'> Git </p>
         </div>
         <div className='column'>
-          <img src={githubLogo} className="logo-skills"/>
+          <img src={githubLogo} className="logo-skills" alt="github"/>
           <p className='label-text'> GitHub </p>
         </div>
         </div>
         <div className='row'>
         <div className='column'>
-          <img src={reactLogo} className="logo-skills"/>
+          <img src={reactLogo} className="logo-skills" alt="react"/>
           <p className='label-text'> React </p>
         </div>
         <div className='column'>
-          <img src={cssLogo} className="logo-skills"/>
+          <img src={cssLogo} className="logo-skills" alt="css"/>
           <p className='label-text'> css </p>
         </div>
         <div className='column'>
-          <img src={springbootLogo} className="logo-skills"/>
+          <img src={springbootLogo} className="logo-skills" alt="springboot"/>
           <p className='label-text'> SpringBoot </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ function proj4Button(){
           <p className='Title center experience'>Experience</p>
             <div className='experience-container'>
               <div className='row experience'>
-                  <img src={mgLogo} className="mgLogo"/>
+                  <img src={mgLogo} className="mgLogo" alt="mission guatemala"/>
                 <div>
                   <p className="experience-text title white"> Mission Guatemala Medical Records Database Software</p>
                 <div className='row org-time'>
@@ -166,7 +166,7 @@ function proj4Button(){
               <div className='column'>
                 {/* <img src={nfliphonescreenshot} className='project-image'></img> */}
                 <img src={nflscreenshot} className='project-image' style={{height: "15vw",
-                width:"30vw", margin:"auto", paddingTop:"1vw"}}></img>
+                width:"30vw", margin:"auto", paddingTop:"1vw"}} alt="Screenshot of NFLdle"></img>
                 <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font'>NFLdle is a front end react app utilizing sportsData.io's 
                     RESTful API and deployed with cloudflare. The application utilizes live-rendered
                     elements in response to user input and fetches data in such a way to minimize API calls 
@@ -176,7 +176,7 @@ function proj4Button(){
             <div className={`project-preview ${proj2Visible ? "toggled" : ""}`}>
             <div className='column'>
                 <img src={wordWarden} className='project-image' style={{height: "15vw",
-                width:"auto", margin:"auto", paddingTop:"1vw"}}></img>
+                width:"auto", margin:"auto", paddingTop:"1vw"}} alt="Word Warden screenshot"></img>
                 <div style={{width:"45vw", padding:"1vw", textAlign:"center" , alignSelf:"center"}} className='font'>Word Warden is a fullstack project with the backend &
                 database handled using supabase. It was released with feedback on how to improve
                 it and with many bugs that had to be quickly handled, giving lots of quick experience
@@ -187,9 +187,9 @@ function proj4Button(){
             <div className='column'>
               <div className='row'>
                 <img src={BeaconLogin} className='project-image' style={{height: "15vw",
-                width:"auto", margin:"auto", paddingTop:"1vw"}}></img>
+                width:"auto", margin:"auto", paddingTop:"1vw"}} alt="Screenshot Beacon Login Screen"></img>
                 <img src={BeaconDB} className='project-image' style={{height: "15vw",
-                width:"auto", margin:"auto", paddingTop:"1vw"}}></img>
+                width:"auto", margin:"auto", paddingTop:"1vw"}} alt="Screenshot of Beacon MySQL Database"></img>
               </div>
                 <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font'>Beacon is a work-in-progress
                 full-stack application dedicated to reviewing games, building a backlog and sharing with friends. 
