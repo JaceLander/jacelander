@@ -28,7 +28,7 @@ import { useEffect, useRef, useState} from 'react';
 
 
 function App() {
-const [proj1Visible, setproj1Visible] = useState(false);
+const [proj1Visible, setproj1Visible] = useState(true);
 const [proj2Visible, setproj2Visible] = useState(false);
 const [proj3Visible, setproj3Visible] = useState(false);
 const [proj4Visible, setproj4Visible] = useState(false);

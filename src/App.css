@@ -143,10 +143,12 @@ margin: 5px;
   padding-right:5vw;
   padding-top: 5vw;
   padding-bottom: 5vw;
+  padding-left: 5vw;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 5vw; /* add this for space between grid items */
   align-items: start; /* align top of each grid cell */
   justify-items: center; /* center contents inside each cell */
+  justify-content: center;
   height: 65vh;
   background-image: url("JaceLanderBGPhoto.png");
   background-color: #bbe1c0;
