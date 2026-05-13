@@ -210,8 +210,7 @@ function proj4Button(){
               </div>
                 <div style={{width:"45vw", padding:"1vw", textAlign:"center", alignSelf:"center"}} className='font desc-text'>Beacon is a work-in-progress
                 full-stack application dedicated to reviewing games, building a backlog and sharing with friends. 
-                The database is using MySQL, backend developed with Java and SpringBoot, and frontend in React. This project
-                is hoped to be released sometime early 2026.</div>
+                The database is using MySQL, backend developed with Java and SpringBoot, and frontend in React.</div>
               </div>
 
             </div>
