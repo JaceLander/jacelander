@@ -56,6 +56,10 @@
 }
 
 .LI-logo {
+    border-width: 0;
+    border-top: 0;
+  border-left: 0;
+  border-right: 0;
   max-height: 5vh;
   padding: 0.25vh;
   margin-top: 1vh;
@@ -89,6 +93,10 @@ margin: 5px;
 
 
 .resume-logo {
+      border-width: 0;
+    border-top: 0;
+  border-left: 0;
+  border-right: 0;
   max-height: 5vh;
   border-left-style:hidden;
   border-radius: 30%;
@@ -112,6 +120,10 @@ margin: 5px;
 
 
 .gitHub-logo {
+      border-width: 0;
+    border-top: 0;
+  border-left: 0;
+  border-right: 0;
   max-height: 5vh;
   border-left-style:hidden;
   padding: 0.25vh;
